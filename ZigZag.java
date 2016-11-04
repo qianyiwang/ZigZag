@@ -48,7 +48,7 @@ public class ZigZag {
         return indexPattern;
     }
 
-    public static void ZigZag(String args[]) {
+    public static void main(String args[]) {
         ZigZag z = new ZigZag();
         String res = z.convert("APPLE",3);
         System.out.println(res);
