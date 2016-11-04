@@ -11,9 +11,10 @@ public class Solution {
         char[] charArr = s.toCharArray();
         
         int[] pattern = getIndexPattern(numRows);
+
         for (int i=0; i<charArr.length;i++){
             int row = pattern[i%pattern.length];
-            list.get(row).add(charArr[i]);
+            list.get(row).add(String.valueOf(charArr[i]));
         }
         
         for (int i=0; i<list.size(); i++){
@@ -48,7 +49,8 @@ public class Solution {
     }
 
     public static void Solution(String args[]) {
-        String res = convert("APPLE",3);
+        Solution s = new Solution();
+        String res = s.convert("APPLE",3);
         System.out.println(res);
     }
 }
