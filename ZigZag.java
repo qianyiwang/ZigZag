@@ -1,5 +1,5 @@
 import java.util.*;
-public class Solution {
+public class ZigZag {
     public String convert(String s, int numRows) {
         String res = "";
         
@@ -48,9 +48,9 @@ public class Solution {
         return indexPattern;
     }
 
-    public static void Solution(String args[]) {
-        Solution s = new Solution();
-        String res = s.convert("APPLE",3);
+    public static void ZigZag(String args[]) {
+        ZigZag z = new ZigZag();
+        String res = z.convert("APPLE",3);
         System.out.println(res);
     }
 }
